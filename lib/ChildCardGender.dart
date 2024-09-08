@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'constants.dart';
 
 class ChildCardGender extends StatelessWidget {
   const ChildCardGender({required this.gender, required this.genderText, super.key,  });
@@ -14,9 +15,7 @@ class ChildCardGender extends StatelessWidget {
         Icon(gender,
           size: 80.0,),
         Text(genderText,
-          style: const TextStyle(
-              fontSize: 25.0
-          ),)
+          style: kLabelText),
       ],
     );
   }
